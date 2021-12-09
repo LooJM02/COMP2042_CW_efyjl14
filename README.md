@@ -1,5 +1,5 @@
 # Brick_Destroy
-This is a simple arcace video game.
+This is a simple arcade video game.
 Player's goal is to destroy a wall with a small ball.
 The game has  very simple commmand:
 
