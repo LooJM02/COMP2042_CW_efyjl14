@@ -1,10 +1,8 @@
-
 package controller;
 
 import view.GameBoardView;
 import view.HomeMenuView;
 import view.InfoMenuView;
-import view.ScoreBoardView;
 
 
 import javax.swing.*;
@@ -23,7 +21,6 @@ public class GameController extends JFrame implements WindowFocusListener {
     private GameBoardView gameBoardView;
     private HomeMenuView homeMenuView;
     private InfoMenuView infoMenuView;
-    private ScoreBoardView scoreBoardView;
     private boolean gameRunning;
 
     /**
@@ -40,7 +37,6 @@ public class GameController extends JFrame implements WindowFocusListener {
 
         infoMenuView = new InfoMenuView(this,new Dimension(600,450));
 
-        scoreBoardView = new ScoreBoardView(this,new Dimension(600,450));
 
         homeMenuView = new HomeMenuView(this,new Dimension(600,450));//from (450,300) . make size of HomeMenuView same as size of GameBoardView
 
@@ -105,13 +101,6 @@ public class GameController extends JFrame implements WindowFocusListener {
         initialize();
     }
 
-    public void enableScoreBoard(){
-        this.dispose();
-        this.remove(homeMenuView);
-        this.add(scoreBoardView,BorderLayout.CENTER);
-        this.setUndecorated(false);
-        initialize();
-    }
 
 
 
@@ -145,3 +134,4 @@ public class GameController extends JFrame implements WindowFocusListener {
             gameBoardView.onLostFocus();
     }
 }
+
