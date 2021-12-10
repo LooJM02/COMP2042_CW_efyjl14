@@ -29,17 +29,17 @@ public class HomeMenuView extends JComponent implements MouseListener, MouseMoti
     private static final String INFO_TEXT = "Info";
 
 
-    private static final Color BG_COLOR = Color.YELLOW.brighter();//yellow
-    private static final Color BORDER_COLOR = new Color(200,8,21); //Venetian Red
-    private static final Color DASH_BORDER_COLOR = new  Color(255, 216, 0);//school bus yellow
-    private static final Color TEXT_COLOR = new Color(0, 0, 0);//text colour as black
+    private static final Color BG_COLOR = Color.YELLOW.brighter();
+    private static final Color BORDER_COLOR = new Color(200,8,21);
+    private static final Color DASH_BORDER_COLOR = new  Color(255, 216, 0);
+    private static final Color TEXT_COLOR = new Color(255, 255, 255);
     private static final Color CLICKED_BUTTON_COLOR = BG_COLOR.darker();
     private static final Color CLICKED_TEXT = Color.BLACK;
     private static final int BORDER_SIZE = 5;
     private static final float[] DASHES = {12,6};
 
     Toolkit t=Toolkit.getDefaultToolkit();
-    private Image bgImage = t.getImage("src/BgPic.jpg");//background picture in home menu
+    private Image HomeImage = t.getImage("src/HomePic.jpg");//background picture
 
 
     private Rectangle menuFace;
@@ -122,7 +122,7 @@ public class HomeMenuView extends JComponent implements MouseListener, MouseMoti
      */
     public void writeMenu(Graphics2D g2d)
     {
-        g2d.drawImage(bgImage, 1, 1, (int) (menuFace.getWidth()), (int) (menuFace.getHeight()), this);
+        g2d.drawImage(HomeImage, 1, 1, (int) (menuFace.getWidth()), (int) (menuFace.getHeight()), this);
 
         writeText(g2d);
         drawButton(g2d);
