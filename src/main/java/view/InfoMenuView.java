@@ -14,11 +14,11 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
     //add details in info page
     private static final String BACK_TEXT = "Back";
     private static final String INFO = "HOW TO PLAY:";
-    private static final String INFO1 = "Press key A and key D to move left and right.";
-    private static final String INFO2 = "Destroy all bricks to move on to the next level .";
-    private static final String INFO3 = "To skip a level , press ALT+SHIFT+F1";
-    private static final String INFO4 = "To Pause game , Press ESC ";
-    private static final String INFO5 = "To sprint, Press SHIFT+A or SHIFT+D ";
+    private static final String INFO1 = "'A' or 'D' to move left and right.";
+    private static final String INFO2 = "Destroy all bricks to win.";
+    private static final String INFO3 = "Press ALT+SHIFT+F1 to skip level ";
+    private static final String INFO4 = "Press ESC to pause game";
+    private static final String INFO5 = "Press SHIFT+A or SHIFT+D to sprint";
     private Font fontTitle;
     private Font fontInstructions;
 
@@ -31,7 +31,7 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
 //    private static final float[] DASHES = {12,6};
 
     Toolkit t=Toolkit.getDefaultToolkit();
-    private Image infoImage = t.getImage("src/InfoPic.jpg");//background picture in Info Page
+    private Image infoImage = t.getImage("src/InfoMenu.jpg");//background picture in Info Page
 
     private Rectangle menuFace;
     private Rectangle backButton;
