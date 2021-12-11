@@ -9,6 +9,10 @@ import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 import controller.GameController;
 
+/**
+ * InfoMenuView class is the class for the implementation of the starting page when the Info button is clicked.
+ * Displays the Info Title and informations and the BACK button
+ */
 public class InfoMenuView extends JComponent implements MouseListener, MouseMotionListener{
 
     //add details in info page
@@ -43,6 +47,15 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
     private boolean backClicked;
 
 
+    /**
+     * InfoMenuView is a parameterized constructor that sets the InfoMenu elements.
+     * Sets the location of the InfoMenu.
+     * Sets the dimensions of the BACK button
+     * Sets the font style and size of all the text in the InfoMenu.
+     * Sets the InfoMenu's border and dashes.
+     * @param owner     passing in the Object/reference variable of the GameController class. Aggregation relationship.
+     * @param area
+     */
     public InfoMenuView(GameController owner,Dimension area){
         this.setFocusable(true);
         this.requestFocusInWindow();
@@ -65,10 +78,22 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
 
     }
 
+    /**
+     * paint is an Overridden Method from the JComponent class.
+     * Method to invoke the painting of the InfoMenu page.
+     * Calls the drawMenu method.
+     * @param g
+     */
     public void paint(Graphics g){
         writeMenu((Graphics2D)g);
     }
 
+    /**
+     * writeMenu method is used to paint directly into the InfoMenu rectangle frame.
+     * Calls the drawContainer method to draw the Info font in the Home Menu screen.
+     * Calls the drawButton method to paint/draw the text and button layout of the BACK button onto the frame.
+     * @param g2d
+     */
     public void writeMenu(Graphics2D g2d){
         g2d.drawImage(infoImage, 1, 1, (int)(menuFace.getWidth()), (int)(menuFace.getHeight()), this);
         writeText(g2d);
@@ -76,6 +101,11 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
 
     }
 
+    /**
+     * writeText Method is used to render the text for the InfoMenu page.
+     * Responsible for drawing the Game Title, Greetings and Credits on the InfoMenu.
+     * @param g2d
+     */
     private void writeText(Graphics2D g2d){
 
         g2d.setColor(TEXT_COLOR);
@@ -115,6 +145,13 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
         g2d.drawString(INFO5, 5, mY);
     }
 
+    /**
+     * addButton Method is used to render the button features and elements such as:
+     * The logical bounds of the BACK button text.
+     * Sets the location of the buttons on the InfomenuFace.
+     * Changes the text and button color when clicked.
+     * @param g2d
+     */
     private void addButton(Graphics2D g2d){
 
         FontRenderContext frc = g2d.getFontRenderContext();
@@ -150,6 +187,13 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
         }
     }
 
+    /**
+     * mouseClicked implements the method in MouseListener.
+     * It contains the implementation for when user clicks on the BACK button
+     * INFO button will enable the GameBoard.
+     * BACK button will return back to HomeMenu page.
+     * @param mouseEvent        to indicate if a mouse action has occurred or not.
+     */
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
@@ -158,6 +202,10 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
         }
     }
 
+    /**
+     * mousePressed Method invoked when a mouse button has been pressed on the BACK button
+     * @param mouseEvent    to indicate if a mouse action has occurred or not.
+     */
     @Override
     public void mousePressed(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
@@ -167,6 +215,10 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
         }
     }
 
+    /**
+     * mouseReleased Method invoked when the mouse is released.
+     * @param mouseEvent    to indicate if a mouse action has occurred or not.
+     */
     @Override
     public void mouseReleased(MouseEvent mouseEvent) {
         if(backClicked ){
@@ -190,6 +242,11 @@ public class InfoMenuView extends JComponent implements MouseListener, MouseMoti
 
     }
 
+    /**
+     * mouseMoved Method implements what should happen when the mouse hovers over the BACK button
+     * and what the cursor should look like otherwise.
+     * @param mouseEvent    to indicate if a mouse action has occurred or not.
+     */
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {
         Point p = mouseEvent.getPoint();
