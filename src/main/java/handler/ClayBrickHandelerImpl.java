@@ -10,7 +10,7 @@ import java.awt.*;
  * Responsible for all the implementations regarding the Clay Brick.
  */
 public class ClayBrickHandelerImpl extends BrickHandler {
-
+ 
     private static final String NAME = "Clay Brick";
     private static final Color DEF_INNER = new Color(253,218,13);//clay brick color as cadmium yellow
     private static final Color DEF_BORDER = new Color(0,150,255);//border color as baby blue colour
