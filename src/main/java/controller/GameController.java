@@ -12,7 +12,7 @@ import java.awt.event.WindowFocusListener;
 
 
 /**
- * GameController is the class responsible for the implementation of the Game Frame window.
+ * GameController is the class responsible for the implementation of the Game Frame window. 
  */
 public class GameController extends JFrame implements WindowFocusListener {
 
