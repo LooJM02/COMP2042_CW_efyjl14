@@ -7,7 +7,7 @@ import java.util.Random;
 
 
 /**
- *  BrickHandler is an Abstract Class that handles all the implementations regarding the Bricks in the game.
+ *  BrickHandler is an Abstract Class that handles all the implementations regarding the Bricks in the game. 
  */
 abstract public class BrickHandler {
 
