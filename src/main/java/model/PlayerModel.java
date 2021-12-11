@@ -7,7 +7,7 @@ import java.awt.*;
 
 /**
  * PlayerModel class is responsible for all the implementations regarding the player.
- */
+ */ 
 public class PlayerModel {
 
 
