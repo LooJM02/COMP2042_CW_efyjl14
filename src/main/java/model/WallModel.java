@@ -10,7 +10,7 @@ import handler.SteelBrickHandelerImpl;
 import model.PlayerModel;
 import java.awt.*;
 import java.awt.geom.Point2D;
-import java.util.Random;
+import java.util.Random; 
 
 /**
  * WallModel class is responsible for all the implementations on the wall,ball and the impacts.
