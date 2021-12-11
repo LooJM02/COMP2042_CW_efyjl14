@@ -20,7 +20,7 @@ public class SteelBrickHandelerImpl extends BrickHandler {
     private static final double STEEL_PROBABILITY = 0.4;
 
     private Random rnd;
-    private Shape brickFace;
+    private Shape brickFace; 
 
     /**
      * SteelBrickModel is a Parameterized Constructor that runs the Parent Class's, BrickHandler class constructor.
