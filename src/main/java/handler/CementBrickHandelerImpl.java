@@ -8,7 +8,7 @@ import java.awt.geom.Point2D;
 
 /**
  * CementBrickModel class is SubClass/Child Class of the BrickController class.
- * It extends the BrickController class. Inheritance
+ * It extends the BrickController class. Inheritance 
  * Responsible for all the implementations regarding the Cement Brick.
  */
 public class CementBrickHandelerImpl extends BrickHandler {
