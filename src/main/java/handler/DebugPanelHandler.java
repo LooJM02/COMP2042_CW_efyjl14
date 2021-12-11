@@ -6,7 +6,7 @@ import javax.swing.*;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionListener;
-
+ 
 
 /**
  * DebugPanelHandler Class handles the implementation of the Debug Panel Window.
