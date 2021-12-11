@@ -4,6 +4,9 @@ package model;
 import java.util.TimerTask;
 import java.util.Timer;
 
+/**
+ * TimerModel class is responsible for all the implementations regarding the timer.
+ */
 public class TimerModel {
 
     private int gameTimer;
@@ -13,6 +16,11 @@ public class TimerModel {
     private TimerTask task;
     private boolean gameRunning = false;
 
+    /**
+     * TimerModel is a Parameterized Constructor that handles the initial implementation of the timer.
+     * Handles the timer when game begins. Sets time starting from zero.
+     * Creates timer.
+     */
     public TimerModel() {
         timer = new Timer();
         task = new TimerTask() {
