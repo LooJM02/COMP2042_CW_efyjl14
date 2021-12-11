@@ -1,7 +1,4 @@
-# Brick_Destroy
-This is a simple arcade video game.
-Player's goal is to destroy a wall with a small ball.
-The game has  very simple commmand:
+# Brick Breaker Game
 
 SPACE - Start/Pause the game 
 
@@ -29,5 +26,18 @@ A build file is added as it automatically downloads and configures the dependenc
   2. Run the application using the command "gradlew run".
 
  > gradlew run
+
+
+# Changes Made And Additions
+1. Classes were separated into respective packages based on the MVC pattern. 
+2. build in gradlew version
+3. added an Info button in the HomeMenu
+4. changed the background images in the HomeMenu
+5. added 2 new levels
+6. player is able to move faster by pressing SHIFT+A or SHIFT+D
+7. added a Home Menu button in the Pause Menu page
+8. changed the colours of the bricks to beautify the game
+9. made the sizes of the pages the same
+10. added timer to the game to let player know how long they're playing the game
 
 
