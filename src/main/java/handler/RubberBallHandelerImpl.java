@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Point2D;
 
-/**
+/** 
  * RubberBallModel class is SubClass/Child Class of the BallController class.
  * It extends the BallController class. Inheritance
  * Responsible for creating the Rubber Ball.
