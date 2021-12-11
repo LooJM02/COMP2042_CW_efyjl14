@@ -5,7 +5,7 @@ import java.awt.geom.Point2D;
 import java.awt.geom.RectangularShape;
 
 
-/**
+/** 
  * GameBallHandler is an Abstract Class that handles all the implementations regarding the Ball Movement.
  */
 abstract public class GameBallHandler {
